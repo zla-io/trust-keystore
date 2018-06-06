@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0D8934E22FDC3D1D13199C36 /* Pods_ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56841D4F7FE48E443F7EAC9 /* Pods_ZillaKeystore.framework */; };
 		259E6830BB160C4525FF0F24 /* Pods_ZillaKeystore_KeystoreBenchmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B38581240AA54E4091477BA /* Pods_ZillaKeystore_KeystoreBenchmark.framework */; };
 		4A0439B920C7FBEF00BF6C78 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A0439B820C7FBEF00BF6C78 /* LICENSE */; };
+		4A0439BA20C8550900BF6C78 /* Pods_ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56841D4F7FE48E443F7EAC9 /* Pods_ZillaKeystore.framework */; };
 		4DA8A60BA5BEC06E4400EF05 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0770B99E4D1ECC5045900EE3 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework */; };
 		610B9B9B202EDB7500C4B10C /* DerivationPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */; };
 		610B9B9E202EDFD200C4B10C /* DerivationPath.Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9D202EDFD200C4B10C /* DerivationPath.Index.swift */; };
@@ -147,7 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0D8934E22FDC3D1D13199C36 /* Pods_ZillaKeystore.framework in Frameworks */,
+				4A0439BA20C8550900BF6C78 /* Pods_ZillaKeystore.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

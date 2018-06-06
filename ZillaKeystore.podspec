@@ -12,6 +12,7 @@ Pod::Spec.new do |s|
   s.source_files = "Sources/**/*.swift"
 
   s.dependency 'CryptoSwift'
+  s.dependency 'TrezorCrypto'
   s.dependency 'ZillaCore'
 
   s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule' }
