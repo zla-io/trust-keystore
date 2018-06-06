@@ -1,14 +1,22 @@
-# Trust Keystore
+# Zilla Keystore
 
-[![Build Status](https://travis-ci.org/TrustWallet/trust-keystore.svg?branch=master)](https://travis-ci.org/TrustWallet/trust-keystore)
-[![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)](https://github.com/TrustWallet/trust-keystore/blob/master/LICENSE)
+[![Build Status](https://travis-ci.org/zla-io/zilla-keystore.svg?branch=master)](https://travis-ci.org/zla-io/zilla-keystore)
+[![License](https://img.shields.io/badge/license-GPL3-green.svg?style=flat)](https://github.com/zla-io/zilla-keystore/blob/master/LICENSE)
 
-A general-purpose Ethereum keystore for managing wallets. This is part of the [Trust Ethereum Wallet for iOS](https://github.com/TrustWallet/trust-wallet-ios), but can be used standalone. It supports:
+A general-purpose Ethereum keystore for managing wallets. This is part of the [iOS Zilla app](https://itunes.apple.com/us/app/zilla-the-safe-easy-ico-app/id1318638544?mt=8), but can be used standalone. It supports:
 
 - [x] Creating new wallets from a private key
 - [x] Loading JSON wallet files
 - [x] Loading BIP39 mnemonic phrase backups
 - [x] Signing hashes
+
+## Install
+
+To install ZillaKeystore, simply add the following line to your Podfile:
+
+```ruby
+pod 'ZillaKeystore', '~> 0.4.1'
+```
 
 ## Contributing
 
@@ -34,4 +42,4 @@ behavior violating this base foundation of respect.
 
 ## License
 
-Trust Keystore is available under the GNU GPL. See the [LICENSE](https://github.com/TrustWallet/trust-keystore/blob/master/LICENSE) file for more info.
+Zilla Keystore is available under the GNU GPL. See the [LICENSE](https://github.com/zla-io/zilla-keystore/blob/master/LICENSE) file for more info.
