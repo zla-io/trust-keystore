@@ -5,7 +5,7 @@
 // file LICENSE at the root of the source code distribution tree.
 
 import TrezorCrypto
-import TrustCore
+import ZillaCore
 @testable import TrustKeystore
 import XCTest
 
