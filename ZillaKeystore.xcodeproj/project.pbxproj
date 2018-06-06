@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0D8934E22FDC3D1D13199C36 /* Pods_ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56841D4F7FE48E443F7EAC9 /* Pods_ZillaKeystore.framework */; };
 		259E6830BB160C4525FF0F24 /* Pods_ZillaKeystore_KeystoreBenchmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B38581240AA54E4091477BA /* Pods_ZillaKeystore_KeystoreBenchmark.framework */; };
+		4A0439B920C7FBEF00BF6C78 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A0439B820C7FBEF00BF6C78 /* LICENSE */; };
 		4DA8A60BA5BEC06E4400EF05 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0770B99E4D1ECC5045900EE3 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework */; };
 		610B9B9B202EDB7500C4B10C /* DerivationPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */; };
 		610B9B9E202EDFD200C4B10C /* DerivationPath.Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9D202EDFD200C4B10C /* DerivationPath.Index.swift */; };
@@ -82,6 +83,7 @@
 		1495BEB912B9546EF235518D /* Pods-ZillaKeystore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZillaKeystore.release.xcconfig"; path = "Pods/Target Support Files/Pods-ZillaKeystore/Pods-ZillaKeystore.release.xcconfig"; sourceTree = "<group>"; };
 		17379EC78D11E0161D0E1307 /* Pods-TrustKeystore.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustKeystore.release.xcconfig"; path = "Pods/Target Support Files/Pods-TrustKeystore/Pods-TrustKeystore.release.xcconfig"; sourceTree = "<group>"; };
 		49CDD76074CC2CFEF09CAA54 /* Pods_TrustKeystore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustKeystore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A0439B820C7FBEF00BF6C78 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		51E54E4D26D570C82615B81E /* Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZillaKeystore-ZillaKeystoreTests/Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig"; sourceTree = "<group>"; };
 		610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationPathTests.swift; sourceTree = "<group>"; };
 		610B9B9D202EDFD200C4B10C /* DerivationPath.Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationPath.Index.swift; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				61FC583F1FE2495E00FFC765 /* README.md */,
+				4A0439B820C7FBEF00BF6C78 /* LICENSE */,
 				61FC58421FE2495E00FFC765 /* Metadata */,
 				61FC58401FE2495E00FFC765 /* Sources */,
 				61FC58441FE2495E00FFC765 /* Tests */,
@@ -428,6 +431,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4A0439B920C7FBEF00BF6C78 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -2,10 +2,10 @@ PODS:
   - BigInt (3.0.1):
     - SipHash (~> 1.2)
   - CryptoSwift (0.9.0)
-  - SipHash (1.2.0)
-  - SwiftLint (0.25.0)
+  - SipHash (1.2.1)
+  - SwiftLint (0.25.1)
   - TrezorCrypto (0.0.5)
-  - ZillaCore (0.0.7):
+  - ZillaCore (0.1.0):
     - BigInt
     - TrezorCrypto
 
@@ -28,10 +28,10 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   BigInt: 8e8a52161c745cd3ab78e3dc346a9fbee51e6cf6
   CryptoSwift: bca8c5b653dcc2d9734409242a070ff53bafac86
-  SipHash: c6e9e43e9c531b5bc6602545130c26194a6d31ce
-  SwiftLint: e14651157288e9e01d6e1a71db7014fb5744a8ea
+  SipHash: b26918dbe6925368d4322374371437c62c9038e2
+  SwiftLint: ce933681be10c3266e82576dad676fa815a602e9
   TrezorCrypto: ecef681446bf02af6248d3b5e394026d7e766e56
-  ZillaCore: c12e29febc4e951bdb2073e4d81cf4946ddc966a
+  ZillaCore: 865cb50c963e032ceea114cfb5984fb46df79ac9
 
 PODFILE CHECKSUM: be4cad92df1e65aecb0b0a542052d04368a8900e
 
