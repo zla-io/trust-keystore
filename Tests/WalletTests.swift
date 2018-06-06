@@ -6,7 +6,7 @@
 
 import TrezorCrypto
 import ZillaCore
-@testable import TrustKeystore
+@testable import ZillaKeystore
 import XCTest
 
 class WalletTests: XCTestCase {

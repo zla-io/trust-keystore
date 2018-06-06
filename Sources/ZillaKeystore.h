@@ -6,8 +6,8 @@
 
 #import <Foundation/Foundation.h>
 
-//! Project version number for TrustKeystore.
-FOUNDATION_EXPORT double TrustKeystoreVersionNumber;
+//! Project version number for ZillaKeystore.
+FOUNDATION_EXPORT double ZillaKeystoreVersionNumber;
 
-//! Project version string for TrustKeystore.
-FOUNDATION_EXPORT const unsigned char TrustKeystoreVersionString[];
+//! Project version string for ZillaKeystore.
+FOUNDATION_EXPORT const unsigned char ZillaKeystoreVersionString[];

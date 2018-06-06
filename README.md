@@ -15,7 +15,7 @@ A general-purpose Ethereum keystore for managing wallets. This is part of the [i
 To install ZillaKeystore, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ZillaKeystore', '~> 0.4.1'
+pod 'ZillaKeystore', '~> 0.5.0'
 ```
 
 ## Contributing
