@@ -11,8 +11,7 @@ Pod::Spec.new do |s|
   s.source       = { git: 'https://github.com/zla-io/zilla-keystore.git', tag: s.version }
   s.source_files = "Sources/**/*.swift"
 
-  s.dependency 'CryptoSwift'
-  s.dependency 'TrezorCrypto'
+  s.dependency 'CryptoSwift', '~> 0.9.0'
   s.dependency 'ZillaCore'
 
   s.pod_target_xcconfig = { 'SWIFT_OPTIMIZATION_LEVEL' => '-Owholemodule' }
