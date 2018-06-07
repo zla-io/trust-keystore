@@ -10,19 +10,13 @@
 		259E6830BB160C4525FF0F24 /* Pods_ZillaKeystore_KeystoreBenchmark.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7B38581240AA54E4091477BA /* Pods_ZillaKeystore_KeystoreBenchmark.framework */; };
 		4A0439B920C7FBEF00BF6C78 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 4A0439B820C7FBEF00BF6C78 /* LICENSE */; };
 		4A0439BA20C8550900BF6C78 /* Pods_ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A56841D4F7FE48E443F7EAC9 /* Pods_ZillaKeystore.framework */; };
-		4DA8A60BA5BEC06E4400EF05 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0770B99E4D1ECC5045900EE3 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework */; };
-		610B9B9B202EDB7500C4B10C /* DerivationPathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */; };
 		610B9B9E202EDFD200C4B10C /* DerivationPath.Index.swift in Sources */ = {isa = PBXBuildFile; fileRef = 610B9B9D202EDFD200C4B10C /* DerivationPath.Index.swift */; };
-		6147C6B4202C1B67009183FB /* WalletTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147C6B3202C1B67009183FB /* WalletTests.swift */; };
 		6147C6B6202D8B60009183FB /* DerivationPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147C6B5202D8B60009183FB /* DerivationPath.swift */; };
 		6147C6B8202D8F71009183FB /* Wallet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147C6B7202D8F71009183FB /* Wallet.swift */; };
 		6147C6BC202E499E009183FB /* HDKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6147C6BB202E499E009183FB /* HDKey.swift */; };
 		6148DA601FE3950300D4C17D /* ScryptParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6148DA5F1FE3950300D4C17D /* ScryptParams.swift */; };
 		6152D4AF1FEEC92300DE7978 /* MnemonicWords.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152D4AE1FEEC92300DE7978 /* MnemonicWords.swift */; };
 		6152D4B11FEEC98500DE7978 /* Mnemonic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152D4B01FEEC98500DE7978 /* Mnemonic.swift */; };
-		6152D4B31FEECF0000DE7978 /* MnemonicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6152D4B21FEECF0000DE7978 /* MnemonicTests.swift */; };
-		61882E152002B62800038860 /* KeyStoreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61882E142002B62800038860 /* KeyStoreTests.swift */; };
-		61BBC0D52038DEE500371E4A /* key.json in Resources */ = {isa = PBXBuildFile; fileRef = 61BBC0D42038DEE500371E4A /* key.json */; };
 		61C568EB1FE599CF00FC2F75 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C568EA1FE599CF00FC2F75 /* AppDelegate.swift */; };
 		61C568ED1FE599CF00FC2F75 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C568EC1FE599CF00FC2F75 /* ViewController.swift */; };
 		61C568F01FE599CF00FC2F75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C568EE1FE599CF00FC2F75 /* Main.storyboard */; };
@@ -30,30 +24,17 @@
 		61C568F51FE599CF00FC2F75 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 61C568F31FE599CF00FC2F75 /* LaunchScreen.storyboard */; };
 		61C568FA1FE599D900FC2F75 /* ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */; };
 		61C568FB1FE599D900FC2F75 /* ZillaKeystore.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		61C569001FE5AB8000FC2F75 /* wallet.json in Resources */ = {isa = PBXBuildFile; fileRef = 61C568FF1FE5AB7F00FC2F75 /* wallet.json */; };
 		61C569021FE5B8D800FC2F75 /* KeystoreKeyHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61C569011FE5B8D800FC2F75 /* KeystoreKeyHeader.swift */; };
 		61DCE1661FFF14B70053939F /* KeyStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCE1651FFF14B70053939F /* KeyStore.swift */; };
 		61DCE1681FFF15ED0053939F /* Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCE1671FFF15ED0053939F /* Account.swift */; };
 		61DCE173200197A30053939F /* KeyStore.Error.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61DCE172200197A30053939F /* KeyStore.Error.swift */; };
-		61ED9D832012D1D600E1C4D1 /* myetherwallet.uu in Resources */ = {isa = PBXBuildFile; fileRef = 61ED9D822012D1D600E1C4D1 /* myetherwallet.uu */; };
-		61FC582B1FE2490E00FFC765 /* ZillaKeystore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */; };
 		61FC58471FE2496700FFC765 /* ZillaKeystore.h in Headers */ = {isa = PBXBuildFile; fileRef = 61FC58411FE2495E00FFC765 /* ZillaKeystore.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		61FC58481FE2496C00FFC765 /* KeystoreKeyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC58451FE2495E00FFC765 /* KeystoreKeyTests.swift */; };
 		61FC584C1FE24A8C00FFC765 /* KeystoreKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC584B1FE24A8C00FFC765 /* KeystoreKey.swift */; };
 		61FC58551FE2C39700FFC765 /* Scrypt.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC58541FE2C39700FFC765 /* Scrypt.swift */; };
-		61FC585D1FE3904600FFC765 /* ScryptTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 61FC585C1FE3904600FFC765 /* ScryptTests.swift */; };
-		F6A9F28E31D4DB81E7CA7F3F /* Pods_TrustKeystore_TrustKeystoreTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B87188CBD5FFF8EC1968F404 /* Pods_TrustKeystore_TrustKeystoreTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		61C568FC1FE599D900FC2F75 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 61FC58181FE2490E00FFC765 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 61FC58201FE2490E00FFC765;
-			remoteInfo = TrustKeystore;
-		};
-		61FC582C1FE2490E00FFC765 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 61FC58181FE2490E00FFC765 /* Project object */;
 			proxyType = 1;
@@ -85,18 +66,13 @@
 		49CDD76074CC2CFEF09CAA54 /* Pods_TrustKeystore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TrustKeystore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4A0439B820C7FBEF00BF6C78 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		51E54E4D26D570C82615B81E /* Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZillaKeystore-ZillaKeystoreTests/Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig"; sourceTree = "<group>"; };
-		610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationPathTests.swift; sourceTree = "<group>"; };
 		610B9B9D202EDFD200C4B10C /* DerivationPath.Index.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationPath.Index.swift; sourceTree = "<group>"; };
-		6147C6B3202C1B67009183FB /* WalletTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalletTests.swift; sourceTree = "<group>"; };
 		6147C6B5202D8B60009183FB /* DerivationPath.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivationPath.swift; sourceTree = "<group>"; };
 		6147C6B7202D8F71009183FB /* Wallet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wallet.swift; sourceTree = "<group>"; };
 		6147C6BB202E499E009183FB /* HDKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HDKey.swift; sourceTree = "<group>"; };
 		6148DA5F1FE3950300D4C17D /* ScryptParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScryptParams.swift; sourceTree = "<group>"; };
 		6152D4AE1FEEC92300DE7978 /* MnemonicWords.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicWords.swift; sourceTree = "<group>"; };
 		6152D4B01FEEC98500DE7978 /* Mnemonic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mnemonic.swift; sourceTree = "<group>"; };
-		6152D4B21FEECF0000DE7978 /* MnemonicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MnemonicTests.swift; sourceTree = "<group>"; };
-		61882E142002B62800038860 /* KeyStoreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStoreTests.swift; sourceTree = "<group>"; };
-		61BBC0D42038DEE500371E4A /* key.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = key.json; sourceTree = "<group>"; };
 		61C568E81FE599CF00FC2F75 /* KeystoreBenchmark.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeystoreBenchmark.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61C568EA1FE599CF00FC2F75 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		61C568EC1FE599CF00FC2F75 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -104,22 +80,17 @@
 		61C568F11FE599CF00FC2F75 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		61C568F41FE599CF00FC2F75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		61C568F61FE599CF00FC2F75 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61C568FF1FE5AB7F00FC2F75 /* wallet.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = wallet.json; sourceTree = "<group>"; };
 		61C569011FE5B8D800FC2F75 /* KeystoreKeyHeader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeystoreKeyHeader.swift; sourceTree = "<group>"; };
 		61DCE1651FFF14B70053939F /* KeyStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.swift; sourceTree = "<group>"; };
 		61DCE1671FFF15ED0053939F /* Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Account.swift; sourceTree = "<group>"; };
 		61DCE172200197A30053939F /* KeyStore.Error.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyStore.Error.swift; sourceTree = "<group>"; };
-		61ED9D822012D1D600E1C4D1 /* myetherwallet.uu */ = {isa = PBXFileReference; explicitFileType = text; fileEncoding = 4; path = myetherwallet.uu; sourceTree = "<group>"; };
 		61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ZillaKeystore.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		61FC582A1FE2490E00FFC765 /* ZillaKeystoreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZillaKeystoreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		61FC583F1FE2495E00FFC765 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		61FC58411FE2495E00FFC765 /* ZillaKeystore.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZillaKeystore.h; sourceTree = "<group>"; };
 		61FC58431FE2495E00FFC765 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		61FC58451FE2495E00FFC765 /* KeystoreKeyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreKeyTests.swift; sourceTree = "<group>"; };
 		61FC58461FE2495E00FFC765 /* TestsInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = TestsInfo.plist; sourceTree = "<group>"; };
 		61FC584B1FE24A8C00FFC765 /* KeystoreKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeystoreKey.swift; sourceTree = "<group>"; };
 		61FC58541FE2C39700FFC765 /* Scrypt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scrypt.swift; sourceTree = "<group>"; };
-		61FC585C1FE3904600FFC765 /* ScryptTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScryptTests.swift; sourceTree = "<group>"; };
 		6E13F4078454E60A4BB794D8 /* Pods-ZillaKeystore-KeystoreBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZillaKeystore-KeystoreBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZillaKeystore-KeystoreBenchmark/Pods-ZillaKeystore-KeystoreBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
 		7B38581240AA54E4091477BA /* Pods_ZillaKeystore_KeystoreBenchmark.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZillaKeystore_KeystoreBenchmark.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D3D60D6FA5E0FDA441C2464 /* Pods-TrustKeystore-KeystoreBenchmark.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TrustKeystore-KeystoreBenchmark.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TrustKeystore-KeystoreBenchmark/Pods-TrustKeystore-KeystoreBenchmark.debug.xcconfig"; sourceTree = "<group>"; };
@@ -148,16 +119,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4A0439BA20C8550900BF6C78 /* Pods_ZillaKeystore.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		61FC58271FE2490E00FFC765 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61FC582B1FE2490E00FFC765 /* ZillaKeystore.framework in Frameworks */,
-				F6A9F28E31D4DB81E7CA7F3F /* Pods_TrustKeystore_TrustKeystoreTests.framework in Frameworks */,
-				4DA8A60BA5BEC06E4400EF05 /* Pods_ZillaKeystore_ZillaKeystoreTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,16 +157,6 @@
 			path = Wallet;
 			sourceTree = "<group>";
 		};
-		610B9B9F202EE20E00C4B10C /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				61BBC0D42038DEE500371E4A /* key.json */,
-				61C568FF1FE5AB7F00FC2F75 /* wallet.json */,
-				61ED9D822012D1D600E1C4D1 /* myetherwallet.uu */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
 		61C568E91FE599CF00FC2F75 /* Benchmark */ = {
 			isa = PBXGroup;
 			children = (
@@ -226,7 +177,6 @@
 				4A0439B820C7FBEF00BF6C78 /* LICENSE */,
 				61FC58421FE2495E00FFC765 /* Metadata */,
 				61FC58401FE2495E00FFC765 /* Sources */,
-				61FC58441FE2495E00FFC765 /* Tests */,
 				61C568E91FE599CF00FC2F75 /* Benchmark */,
 				61FC58221FE2490E00FFC765 /* Products */,
 				124BD5EA35BBF064AD69D2DF /* Pods */,
@@ -238,7 +188,6 @@
 			isa = PBXGroup;
 			children = (
 				61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */,
-				61FC582A1FE2490E00FFC765 /* ZillaKeystoreTests.xctest */,
 				61C568E81FE599CF00FC2F75 /* KeystoreBenchmark.app */,
 			);
 			name = Products;
@@ -267,20 +216,6 @@
 				61FC58461FE2495E00FFC765 /* TestsInfo.plist */,
 			);
 			path = Metadata;
-			sourceTree = "<group>";
-		};
-		61FC58441FE2495E00FFC765 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-				610B9B9A202EDB7500C4B10C /* DerivationPathTests.swift */,
-				61FC58451FE2495E00FFC765 /* KeystoreKeyTests.swift */,
-				61882E142002B62800038860 /* KeyStoreTests.swift */,
-				6152D4B21FEECF0000DE7978 /* MnemonicTests.swift */,
-				61FC585C1FE3904600FFC765 /* ScryptTests.swift */,
-				6147C6B3202C1B67009183FB /* WalletTests.swift */,
-				610B9B9F202EE20E00C4B10C /* Data */,
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		CA87661540ADCE75A47829A8 /* Frameworks */ = {
@@ -351,26 +286,6 @@
 			productReference = 61FC58211FE2490E00FFC765 /* ZillaKeystore.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		61FC58291FE2490E00FFC765 /* ZillaKeystoreTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 61FC58381FE2490E00FFC765 /* Build configuration list for PBXNativeTarget "ZillaKeystoreTests" */;
-			buildPhases = (
-				682878827DE0FBE9361CB1D8 /* [CP] Check Pods Manifest.lock */,
-				61FC58261FE2490E00FFC765 /* Sources */,
-				61FC58271FE2490E00FFC765 /* Frameworks */,
-				61FC58281FE2490E00FFC765 /* Resources */,
-				F2780A2821203580B330C58E /* [CP] Embed Pods Frameworks */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				61FC582D1FE2490E00FFC765 /* PBXTargetDependency */,
-			);
-			name = ZillaKeystoreTests;
-			productName = TrustKeystoreTests;
-			productReference = 61FC582A1FE2490E00FFC765 /* ZillaKeystoreTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -390,10 +305,6 @@
 						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
-					61FC58291FE2490E00FFC765 = {
-						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
-					};
 				};
 			};
 			buildConfigurationList = 61FC581B1FE2490E00FFC765 /* Build configuration list for PBXProject "ZillaKeystore" */;
@@ -410,7 +321,6 @@
 			projectRoot = "";
 			targets = (
 				61FC58201FE2490E00FFC765 /* ZillaKeystore */,
-				61FC58291FE2490E00FFC765 /* ZillaKeystoreTests */,
 				61C568E71FE599CF00FC2F75 /* KeystoreBenchmark */,
 			);
 		};
@@ -435,16 +345,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FC58281FE2490E00FFC765 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61C569001FE5AB8000FC2F75 /* wallet.json in Resources */,
-				61ED9D832012D1D600E1C4D1 /* myetherwallet.uu in Resources */,
-				61BBC0D52038DEE500371E4A /* key.json in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -461,24 +361,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"";
-		};
-		682878827DE0FBE9361CB1D8 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-ZillaKeystore-ZillaKeystoreTests-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
 		};
 		753738606A221C0BA458D986 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -542,32 +424,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F2780A2821203580B330C58E /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-ZillaKeystore-ZillaKeystoreTests/Pods-ZillaKeystore-ZillaKeystoreTests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BigInt/BigInt.framework",
-				"${BUILT_PRODUCTS_DIR}/CryptoSwift/CryptoSwift.framework",
-				"${BUILT_PRODUCTS_DIR}/SipHash/SipHash.framework",
-				"${BUILT_PRODUCTS_DIR}/TrezorCrypto/TrezorCrypto.framework",
-				"${BUILT_PRODUCTS_DIR}/ZillaCore/ZillaCore.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BigInt.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CryptoSwift.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SipHash.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TrezorCrypto.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ZillaCore.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ZillaKeystore-ZillaKeystoreTests/Pods-ZillaKeystore-ZillaKeystoreTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -600,19 +456,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		61FC58261FE2490E00FFC765 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				61FC58481FE2496C00FFC765 /* KeystoreKeyTests.swift in Sources */,
-				610B9B9B202EDB7500C4B10C /* DerivationPathTests.swift in Sources */,
-				61882E152002B62800038860 /* KeyStoreTests.swift in Sources */,
-				61FC585D1FE3904600FFC765 /* ScryptTests.swift in Sources */,
-				6147C6B4202C1B67009183FB /* WalletTests.swift in Sources */,
-				6152D4B31FEECF0000DE7978 /* MnemonicTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -620,11 +463,6 @@
 			isa = PBXTargetDependency;
 			target = 61FC58201FE2490E00FFC765 /* ZillaKeystore */;
 			targetProxy = 61C568FC1FE599D900FC2F75 /* PBXContainerItemProxy */;
-		};
-		61FC582D1FE2490E00FFC765 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 61FC58201FE2490E00FFC765 /* ZillaKeystore */;
-			targetProxy = 61FC582C1FE2490E00FFC765 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -842,34 +680,6 @@
 			};
 			name = Release;
 		};
-		61FC58391FE2490E00FFC765 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 51E54E4D26D570C82615B81E /* Pods-ZillaKeystore-ZillaKeystoreTests.debug.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Metadata/TestsInfo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.zla.app.ZillaKeystoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		61FC583A1FE2490E00FFC765 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 02BF205AD476D848A4229230 /* Pods-ZillaKeystore-ZillaKeystoreTests.release.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Metadata/TestsInfo.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = io.zla.app.ZillaKeystoreTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -896,15 +706,6 @@
 			buildConfigurations = (
 				61FC58361FE2490E00FFC765 /* Debug */,
 				61FC58371FE2490E00FFC765 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		61FC58381FE2490E00FFC765 /* Build configuration list for PBXNativeTarget "ZillaKeystoreTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				61FC58391FE2490E00FFC765 /* Debug */,
-				61FC583A1FE2490E00FFC765 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
