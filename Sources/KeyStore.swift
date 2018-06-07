@@ -7,10 +7,16 @@
 import Foundation
 import ZillaCore
 
+public protocol KeystoreDataDelegate: class {
+    func save(key: KeystoreKey) throws
+    func delete(account: Account) throws
+    func getKeystoreKeys() -> [KeystoreKey]
+}
+
 /// Manages directories of key and wallet files and presents them as accounts.
 public final class KeyStore {
-    /// The key file directory.
-    public let keyDirectory: URL
+    /// Delegate to save, delete, load account information.
+    public weak var delegate: KeystoreDataDelegate?
 
     /// Dictionary of accounts by address.
     private var accountsByAddress = [Address: Account]()
@@ -19,24 +25,17 @@ public final class KeyStore {
     private var keysByAddress = [Address: KeystoreKey]()
 
     /// Creates a `KeyStore` for the given directory.
-    public init(keyDirectory: URL) throws {
-        self.keyDirectory = keyDirectory
+    public init(delegate: KeystoreDataDelegate) throws {
+        self.delegate = delegate
         try load()
     }
 
     private func load() throws {
-        let fileManager = FileManager.default
-        try? fileManager.createDirectory(at: keyDirectory, withIntermediateDirectories: true, attributes: nil)
-
-        let accountURLs = try fileManager.contentsOfDirectory(at: keyDirectory, includingPropertiesForKeys: [], options: [.skipsHiddenFiles])
-        for url in accountURLs {
-            do {
-                let key = try KeystoreKey(contentsOf: url)
+        if let keys = delegate?.getKeystoreKeys() {
+            for key in keys {
                 keysByAddress[key.address] = key
-                let account = Account(address: key.address, type: key.type, url: url)
+                let account = Account(address: key.address, type: key.type)
                 accountsByAddress[key.address] = account
-            } catch {
-                // Ignore invalid keys
             }
         }
     }
@@ -61,9 +60,8 @@ public final class KeyStore {
         let key = try KeystoreKey(password: password, type: type)
         keysByAddress[key.address] = key
 
-        let url = makeAccountURL(for: key.address)
-        let account = Account(address: key.address, type: type, url: url)
-        try save(account: account, in: keyDirectory)
+        let account = Account(address: key.address, type: type)
+        try save(account: account)
         accountsByAddress[key.address] = account
         return account
     }
@@ -89,9 +87,8 @@ public final class KeyStore {
         let newKey = try KeystoreKey(password: newPassword, key: privateKey)
         keysByAddress[newKey.address] = newKey
 
-        let url = makeAccountURL(for: key.address)
-        let account = Account(address: newKey.address, type: key.type, url: url)
-        try save(account: account, in: keyDirectory)
+        let account = Account(address: newKey.address, type: key.type)
+        try save(account: account)
         accountsByAddress[newKey.address] = account
 
         return account
@@ -119,9 +116,8 @@ public final class KeyStore {
         let newKey = try KeystoreKey(password: encryptPassword, mnemonic: mnemonic, passphrase: passphrase, derivationPath: derivationPath)
         keysByAddress[newKey.address] = newKey
 
-        let url = makeAccountURL(for: address)
-        let account = Account(address: address, type: .hierarchicalDeterministicWallet, url: url)
-        try save(account: account, in: keyDirectory)
+        let account = Account(address: address, type: .hierarchicalDeterministicWallet)
+        try save(account: account)
         accountsByAddress[address] = account
 
         return account
@@ -257,7 +253,7 @@ public final class KeyStore {
 
         keysByAddress[account.address] = nil
 
-        try FileManager.default.removeItem(at: account.url)
+        try delegate?.delete(account: account)
         accountsByAddress[account.address] = nil
     }
 
@@ -291,38 +287,12 @@ public final class KeyStore {
         return try key.signHashes(data, password: password)
     }
 
-    // MARK: Helpers
-
-    private func makeAccountURL(for address: Address) -> URL {
-        return keyDirectory.appendingPathComponent(generateFileName(address: address))
-    }
-
     /// Saves the account to the given directory.
-    private func save(account: Account, in directory: URL) throws {
+    private func save(account: Account) throws {
         guard let key = keysByAddress[account.address] else {
             fatalError("Missing account key")
         }
-        try save(key: key, to: account.url)
-    }
-
-    /// Generates a unique file name for an address.
-    func generateFileName(address: Address, date: Date = Date(), timeZone: TimeZone = .current) -> String {
-        // keyFileName implements the naming convention for keyfiles:
-        // UTC--<created_at UTC ISO8601>-<address hex>
-        return "UTC--\(filenameTimestamp(for: date, in: timeZone))--\(address.data.hexString)"
-    }
-
-    private func filenameTimestamp(for date: Date, in timeZone: TimeZone = .current) -> String {
-        var tz = ""
-        let offset = timeZone.secondsFromGMT()
-        if offset == 0 {
-            tz = "Z"
-        } else {
-            tz = String(format: "%03d00", offset/60)
-        }
-
-        let components = Calendar(identifier: .iso8601).dateComponents(in: timeZone, from: date)
-        return String(format: "%04d-%02d-%02dT%02d-%02d-%02d.%09d%@", components.year!, components.month!, components.day!, components.hour!, components.minute!, components.second!, components.nanosecond!, tz)
+        try delegate?.save(key: key)
     }
 
     private func save(key: KeystoreKey, to url: URL) throws {

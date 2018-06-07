@@ -15,14 +15,10 @@ public struct Account: Hashable {
     /// Account type.
     public var type: AccountType
 
-    /// URL for the key file on disk.
-    public var url: URL
-
     /// Creates an `Account` with an Ethereum address and a `Key`.
-    public init(address: Address, type: AccountType, url: URL) {
+    public init(address: Address, type: AccountType) {
         self.address = address
         self.type = type
-        self.url = url
     }
 
     public var hashValue: Int {

@@ -64,12 +64,6 @@ public struct KeystoreKey {
         }
     }
 
-    /// Initializes a `Key` from a JSON wallet.
-    public init(contentsOf url: URL) throws {
-        let data = try Data(contentsOf: url)
-        self = try JSONDecoder().decode(KeystoreKey.self, from: data)
-    }
-
     /// Initializes a `Key` by encrypting a private key with a password.
     public init(password: String, key: Data) throws {
         id = UUID().uuidString.lowercased()
