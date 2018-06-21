@@ -287,16 +287,11 @@ public final class KeyStore {
         return try key.signHashes(data, password: password)
     }
 
-    /// Saves the account to the given directory.
+    /// Saves the account. send save action to delegate.
     private func save(account: Account) throws {
         guard let key = keysByAddress[account.address] else {
             fatalError("Missing account key")
         }
         try delegate?.save(key: key)
-    }
-
-    private func save(key: KeystoreKey, to url: URL) throws {
-        let json = try JSONEncoder().encode(key)
-        try json.write(to: url, options: [.atomicWrite])
     }
 }
