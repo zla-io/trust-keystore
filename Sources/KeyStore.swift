@@ -9,8 +9,8 @@ import ZillaCore
 
 public protocol KeystoreDataDelegate: class {
     func save(key: KeystoreKey) throws
-    func delete(account: Account) throws
-    func getKeystoreKeys() -> [KeystoreKey]
+    func delete(account: Account)
+    func getKeystoreKeys() throws -> [KeystoreKey]
 }
 
 /// Manages directories of key and wallet files and presents them as accounts.
@@ -31,7 +31,7 @@ public final class KeyStore {
     }
 
     private func load() throws {
-        if let keys = delegate?.getKeystoreKeys() {
+        if let keys = try delegate?.getKeystoreKeys() {
             for key in keys {
                 keysByAddress[key.address] = key
                 let account = Account(address: key.address, type: key.type)
