@@ -253,7 +253,7 @@ public final class KeyStore {
 
         keysByAddress[account.address] = nil
 
-        try delegate?.delete(account: account)
+        delegate?.delete(account: account)
         accountsByAddress[account.address] = nil
     }
 

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = 'ZillaKeystore'
-  s.version      = '0.5.0'
+  s.version      = '0.5.1'
   s.summary      = 'A general-purpose Ethereum keystore for managing wallets.'
   s.homepage     = 'https://github.com/zla-io/zilla-keystore'
   s.license      = 'ZLA'
