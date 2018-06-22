@@ -5,6 +5,7 @@
 
 A general-purpose Ethereum keystore for managing wallets. This is part of the [iOS Zilla app](https://itunes.apple.com/us/app/zilla-the-safe-easy-ico-app/id1318638544?mt=8), but can be used standalone. It supports:
 
+- [x] Creating new wallets from the mnemonic word list
 - [x] Creating new wallets from a private key
 - [x] Loading JSON wallet files
 - [x] Loading BIP39 mnemonic phrase backups
@@ -15,7 +16,7 @@ A general-purpose Ethereum keystore for managing wallets. This is part of the [i
 To install ZillaKeystore, simply add the following line to your Podfile:
 
 ```ruby
-pod 'ZillaKeystore', '~> 0.5.0'
+pod 'ZillaKeystore', '~> 0.5.1'
 ```
 
 ## Contributing
